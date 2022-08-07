@@ -1,4 +1,5 @@
-﻿string  firstDayoOfTheWeek = "Понедельник",
+﻿//Задание: По заданному номеру дня недели вывести его название
+string  firstDayoOfTheWeek = "Понедельник",
         secondDayoOfTheWeek = "Вторник",
         thirdDayoOfTheWeek = "Среда",
         fourthDayoOfTheWeek = "Четверг",
