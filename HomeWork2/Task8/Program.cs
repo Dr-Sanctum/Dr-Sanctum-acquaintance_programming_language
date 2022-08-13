@@ -1,6 +1,6 @@
 ﻿//Задание: Подсчитать сумму цифр в числе
 
-Console.Write("Введите число ");
+Console.Write("Введите положительное число ");
 
 int a = int.Parse(Console.ReadLine());
 
@@ -17,7 +17,7 @@ if (a > 9)
 
      Console.Write("В числе " + a + " сумма цифр = " + result);
 }
-if (0 < b && b > 10)
+if (a < 10)
 {
     Console.Write("В числе " + a + " сумма цифр = " + b);
 }
