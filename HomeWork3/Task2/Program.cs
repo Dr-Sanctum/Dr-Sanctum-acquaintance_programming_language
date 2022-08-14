@@ -1,4 +1,4 @@
-﻿//Задание: Задать массив из 12 элементов, заполненных числами из [0,9]. Найти сумму чётных/нечётных элементов массива
+﻿//Задание: Задать массив из 12 элементов, заполненных числами из [0,9]. Найти сумму положительных/отрицательных элементов массива
 
 int[] array = new int[12];
 
@@ -18,7 +18,7 @@ int result = 0;
 
 foreach (var item in _array)
 {
-    if (item%2 ==0)
+    if (item > 0)
     {
         result += item;
     }
@@ -33,7 +33,7 @@ int result = 0;
 
 foreach (var item in _array)
 {
-    if (item%2 == 1)
+    if (item < 0)
     {
         result += item;
     }
@@ -42,5 +42,5 @@ return result;
 }
 
 Console.WriteLine();
-Console.WriteLine("Сумма всех чётных чисел массива = " + SumPositive(array));
-Console.WriteLine("Сумма всех нечётных чисел массива = " + SumNegative(array));
+Console.WriteLine("Сумма всех положительных элементов массива = " + SumPositive(array));
+Console.WriteLine("Сумма всех отрицательных элементов массива = " + SumNegative(array));
