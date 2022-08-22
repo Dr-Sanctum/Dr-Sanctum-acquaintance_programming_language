@@ -16,7 +16,7 @@
 
 string given = Console.ReadLine();
 
-double[] numbers = given.Split(' ').Select(double.Parse).ToArray();
+float[] numbers = given.Split(' ').Select(float.Parse).ToArray();
 
 double x = Math.Round(numbers[0] / numbers [2], 0, MidpointRounding.ToPositiveInfinity);
 
