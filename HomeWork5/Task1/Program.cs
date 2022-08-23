@@ -18,9 +18,9 @@ string given = Console.ReadLine();
 
 float[] numbers = given.Split(' ').Select(float.Parse).ToArray();
 
-double x = Math.Round(numbers[0] / numbers [2], 0, MidpointRounding.ToPositiveInfinity);
+long x = Convert.ToInt32(Math.Round(numbers[0] / numbers [2], 0, MidpointRounding.ToPositiveInfinity));
 
-double y = Math.Round(numbers[1] / numbers [2], 0, MidpointRounding.ToPositiveInfinity);
+long y = Convert.ToInt32(Math.Round(numbers[1] / numbers [2], 0, MidpointRounding.ToPositiveInfinity));
 
 
 Console.WriteLine(x * y);
