@@ -27,14 +27,21 @@ void FillArrayRandom(int[,] matrix, int min, int max)
 }
 void TranspositionMatrix(int[,] matrix)
 {
-    int temp = 0;
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    if (matrix.GetLength(0) != matrix.GetLength(1))
     {
-        for (int j = 0 + i; j < matrix.GetLength(1); j++)
+        Console.WriteLine("Матрица не квадратная");
+    }
+    else
+    {
+        int temp = 0;
+        for (int i = 0; i < matrix.GetLength(0); i++)
         {
-            temp = matrix[i, j];
-            matrix[i, j] = matrix[j, i];
-            matrix[j, i] = temp;
+            for (int j = 0 + i; j < matrix.GetLength(1); j++)
+            {
+                temp = matrix[i, j];
+                matrix[i, j] = matrix[j, i];
+                matrix[j, i] = temp;
+            }
         }
     }
 }
