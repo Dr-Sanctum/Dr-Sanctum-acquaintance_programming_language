@@ -20,7 +20,7 @@ void Foo(int[,,] matrix)
 {
     var rand = new Random();
     int tempRandom;
-    int[] temp = new int[88];// двузначные числа от 10 до 99
+    int[] temp = new int[matrix.GetLength(0) * matrix.GetLength(1) * matrix.GetLength(2)];
     int counter = 0;
     bool x = true;
 
@@ -30,7 +30,7 @@ void Foo(int[,,] matrix)
         {
             for (int k = 0; k < matrix.GetLength(2); k++)
             {
-                for (; ; )
+                for (;;)
                 {
                     x = true;
                     tempRandom = rand.Next(10, 100); // двузначные числа от 10 до 99
