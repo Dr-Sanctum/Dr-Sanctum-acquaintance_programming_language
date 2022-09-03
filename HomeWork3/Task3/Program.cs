@@ -1,4 +1,4 @@
-﻿//Задание: Написать программу замену элементов массива на противоположные (по индексу)
+﻿//Задание: Написать программу замену элементов массива на противоположные
 
 int[] array = new int[10];
 
@@ -8,7 +8,7 @@ void FillAndViewArray( int[] _array)
 
 for (int i = 0; i < _array.Length; i++)
     {
-        _array[i] = new Random().Next(0,9);
+        _array[i] = new Random().Next(-9,9);
     }
 
 for (int i = 0; i < _array.Length; i++)
@@ -20,11 +20,9 @@ for (int i = 0; i < _array.Length; i++)
 void ReverseArray (int[] _array)
 {
     int temp = 0;
-    for (int i = 0; i < _array.Length/2; i++)
+    for (int i = 0; i < _array.Length; i++)
     {
-       temp = _array[i];
-       _array[i] = _array[_array.Length-1-i];
-       _array[_array.Length-1-i] = temp;
+       _array[i] = _array[i]*-1;
     }
 }
 
